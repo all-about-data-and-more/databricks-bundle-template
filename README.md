@@ -1,11 +1,11 @@
 # databricks-bundle-template
 
-[![CI/CD](https://github.com/modern-data-engineering-lab/databricks-bundle-template/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/modern-data-engineering-lab/databricks-bundle-template/actions/workflows/ci-cd.yml)
+[![CI/CD](https://github.com/all-about-data-and-more/databricks-bundle-template/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/all-about-data-and-more/databricks-bundle-template/actions/workflows/ci-cd.yml)
 
 A minimal, working Databricks Asset Bundle (DAB) project — dev/staging/prod deploy targets,
 a Lakeflow Declarative Pipeline with tests, and a real branch→environment CI/CD workflow —
 meant to be forked, not run as-is. It's the Databricks-side counterpart to
-[`shared-databricks-utils`](https://github.com/modern-data-engineering-lab/shared-databricks-utils):
+[`shared-databricks-utils`](https://github.com/all-about-data-and-more/shared-databricks-utils):
 that repo is the Python utilities every job imports, this one is the deployment scaffolding
 every job is deployed with.
 
@@ -483,11 +483,11 @@ identity rather than a service principal, useful for quick iteration without tou
 
 ## Where this fits in the portfolio
 
-This repo is the second one built in `modern-data-engineering-lab`, and it's infrastructure
+This repo is the second one built in `all-about-data-and-more`, and it's infrastructure
 for the rest of the org more than a project in its own right — most of what's here exists to
 be forked or copied, not run as-is:
 
-- **[`shared-databricks-utils`](https://github.com/modern-data-engineering-lab/shared-databricks-utils)**
+- **[`shared-databricks-utils`](https://github.com/all-about-data-and-more/shared-databricks-utils)**
   is its sibling: that repo is the Python utilities every Databricks job imports (logging,
   config, schema validation, retry/backoff); this repo is what deploys the job that imports
   them. Neither is useful alone for a real project — a pipeline needs both shared code *and*
